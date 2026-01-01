@@ -1,0 +1,25 @@
+/* レトロ風スタイル */
+html,body{height:100%;margin:0;font-family: 'MS PGothic', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;background: repeating-linear-gradient(45deg,#0b1020 0 6px,#071024 6px 12px);color:#fff}
+#container{max-width:980px;margin:20px auto;background:linear-gradient(#00142880,#00101a80);padding:16px;border:4px solid #ff66cc;box-shadow:0 0 0 4px #000 inset}
+header h1{margin:6px 0;font-size:28px;color:#ffcc66;text-shadow:1px 1px 0 #000}
+marquee{background:#111;border:2px dashed #ff66cc;padding:6px;margin-bottom:8px}
+nav ul{list-style:none;padding:0;display:flex;gap:8px}
+nav a{color:#9ff; text-decoration:none;padding:4px 8px;border:1px dotted #9ff;background:#001a2a}
+main{display:block}
+section{padding:12px;margin:8px 0;background:linear-gradient(#021428,#00141a);border:2px solid #004455}
+.left{float:left;width:160px;margin-right:12px;text-align:center}
+.avatar{font-size:36px;background:#000;border:2px solid #ff99cc;padding:8px;margin-bottom:6px}
+.sparkle{width:48px;height:48px;filter:drop-shadow(0 0 6px #ffccff)}
+.under{color:#ffccdd;font-weight:bold}
+.content p{color:#cfeeff}
+#guestbook textarea{width:80%;height:80px}
+#guestbook input, #guestbook textarea{background:#021f2f;border:1px solid #336;padding:6px;color:#fff}
+#entries{margin-top:12px}
+.entry{background:#041a24;border:1px dashed #226;padding:8px;margin-bottom:6px}
+.weblist li{margin:6px 0}
+footer{text-align:center;margin-top:12px;color:#aab}
+@media (max-width:600px){.left{float:none;width:auto;margin:0 0 12px 0}}
+
+/* レトロな点滅 */
+@keyframes blink{0%{opacity:1}50%{opacity:0.2}100%{opacity:1}}
+.avatar{animation:blink 1.2s infinite}
