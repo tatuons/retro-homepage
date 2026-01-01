@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded',function(){
   const form = document.getElementById('gb-form');
   form.addEventListener('submit',function(ev){
     ev.preventDefault();
-    const name = document.getElementById('name').value.trim()||'名無し';
+    const name = document.getElementById('name').value.trim()||'名無しさん';
     const msg = document.getElementById('message').value.trim();
     if(!msg) return;
     const entries = JSON.parse(localStorage.getItem('retro_gb')||'[]');
@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded',function(){
   });
 
   document.getElementById('clear').addEventListener('click',function(){
-    if(confirm('ゲストブックを消しますか？')){
+    if(confirm('ゲストブックをクリアしますか？')){
       localStorage.removeItem('retro_gb'); render();
     }
   });
